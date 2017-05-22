@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript"
+	src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script type="text/javascript"
+	src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<!-- <script type="text/javascript" src='<c:url value="/scripts/homepage.js"/>'></script> -->
+<link rel="stylesheet"
+	href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+</head>
+<body>
+	FROM DATE :
+	<input id="from_date" type="text" /> &nbsp &nbsp TO DATE :
+	<input id="to_date" type="text" />
+	<br />
+	<br />
+	<br /> NAME OF THE STOCK :
+	<input type="text" />
+	<br />
+	<br />
+	<br />
+
+	<input type="submit" />
+
+</body>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#from_date').datepicker();
+	$('#to_date').datepicker();
+});
+</script>
+</html>
