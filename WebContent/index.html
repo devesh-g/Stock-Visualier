@@ -7,7 +7,7 @@
 	src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script type="text/javascript"
 	src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<!-- <script type="text/javascript" src='<c:url value="/scripts/homepage.js"/>'></script> -->
+ <script type="text/javascript" src='scripts/homepage.js'></script> 
 <link rel="stylesheet"
 	href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
 	<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"></script>
@@ -23,7 +23,7 @@
 	<br />
 	<br />
 	 NAME OF THE STOCK :
-	<input class="form-control" type="text" />
+	<input class="form-control" id="stockName" type="text" />
 	<br />
 	<br />
 	<br />
@@ -32,19 +32,7 @@
 </div>
 </form>
 </body>
-<script type="text/javascript">
-$(document).ready(function(){
-	$('#from_date').datepicker();
-	$('#to_date').datepicker();
-	
-	
-	$('#homeform').submit(function(){
-		//alert('ferffe');
-	});
-	
-});
-
-
+<script type="text/javascript"> 
 
 </script>
 </html>
