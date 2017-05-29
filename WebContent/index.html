@@ -15,10 +15,12 @@
 
 </head>
 <body>
+<form id="homeform" action="views/Result.html">
 <div class="col-xs-2">
 	FROM DATE :
 	<input class="form-control" id="from_date" type="text" /> 
 	TO DATE : <input class="form-control" id="to_date" type="text" />
+	<br />
 	<br />
 	 NAME OF THE STOCK :
 	<input class="form-control" type="text" />
@@ -28,11 +30,21 @@
 
 	<input class="form-control btn-primary" type="submit" />
 </div>
+</form>
 </body>
 <script type="text/javascript">
 $(document).ready(function(){
 	$('#from_date').datepicker();
 	$('#to_date').datepicker();
+	
+	
+	$('#homeform').submit(function(){
+		//alert('ferffe');
+	});
+	
 });
+
+
+
 </script>
 </html>
